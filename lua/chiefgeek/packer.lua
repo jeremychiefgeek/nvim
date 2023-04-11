@@ -32,7 +32,7 @@ return require('packer').startup(function(use)
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
 	  requires = {
-	)	  -- LSP Support
+		  -- LSP Support
 		  {'neovim/nvim-lspconfig'},             -- Required
 		  {                                      -- Optional
 		  'williamboman/mason.nvim',
