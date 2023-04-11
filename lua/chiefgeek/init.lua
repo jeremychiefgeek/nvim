@@ -1,5 +1,2 @@
-
 require("chiefgeek.remap")
-print("Hello, Chief Geek!")
-
-
+require("chiefgeek.set")

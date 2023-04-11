@@ -1,4 +1,1 @@
-
 require("chiefgeek")
-print("hello")
-
