@@ -5,7 +5,7 @@ lsp.preset("recommended")
 lsp.ensure_installed({
   'tsserver',
   'clangd',
-  'csharp_ls',
+  'omnisharp',
   'cssls',
   'tailwindcss',
   'volar'
