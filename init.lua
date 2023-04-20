@@ -1,6 +1,5 @@
 require("chiefgeek")
 
-
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
     parser_config.odin = {
         install_info = {
