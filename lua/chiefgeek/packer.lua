@@ -3,6 +3,9 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
+
+require('orgmode').setup_ts_grammar()
+
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
