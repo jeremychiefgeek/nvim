@@ -29,7 +29,8 @@ return require('packer').startup(function(use)
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
-    use('navarasu/onedark.nvim')
+    --use('navarasu/onedark.nvim')
+    use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
     use {'nvim-orgmode/orgmode', config = function()
         require('orgmode').setup{}
     end

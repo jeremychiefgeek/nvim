@@ -1,4 +1,4 @@
-require('onedark').setup  {
+--[[require('onedark').setup  {
     -- Main options --
     style = 'darker', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
     transparent = true,  -- Show/hide background
@@ -36,12 +36,12 @@ require('onedark').setup  {
         undercurl = true,   -- use undercurl instead of underline for diagnostics
         background = true,    -- use background color for virtual text
     },
-}
-
-
+}]]--
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox]])
 require('lualine').setup {
   options = {
-    theme = 'onedark'
+    theme = 'gruvbox'
     -- ... your lualine config
   }
 }
@@ -49,7 +49,7 @@ require('lualine').setup {
 function ColorMyPencils(color)
 
 
-	color = color or "onedark"--"rose-pine"
+	color = color or "gruvbox"--"onedark"--"rose-pine"
 	vim.cmd.colorscheme(color)
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" } )

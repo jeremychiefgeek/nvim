@@ -1,0 +1,26 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-o",
+      "play",
+      "main.cpp"
+    ],
+    "directory": "/home/jeremyevans/development/cpp/LearnOpenGl",
+    "file": "/home/jeremyevans/development/cpp/LearnOpenGl/main.cpp",
+    "output": "/home/jeremyevans/development/cpp/LearnOpenGl/play"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-o",
+      "play",
+      "glad.c"
+    ],
+    "directory": "/home/jeremyevans/development/cpp/LearnOpenGl",
+    "file": "/home/jeremyevans/development/cpp/LearnOpenGl/glad.c",
+    "output": "/home/jeremyevans/development/cpp/LearnOpenGl/play"
+  }
+]
