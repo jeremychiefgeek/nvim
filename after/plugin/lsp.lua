@@ -8,7 +8,11 @@ lsp.ensure_installed({
   'omnisharp',
   'cssls',
   'tailwindcss',
-  'volar'
+  'volar',
+  'intelephense',
+  'svelte',
+  'rust_analyzer',
+  'zls'
 })
 
 -- Fix Undefined global 'vim'
