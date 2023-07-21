@@ -29,6 +29,11 @@ use('nvim-treesitter/playground')
 use('theprimeagen/harpoon')
 use('mbbill/undotree')
 use('tpope/vim-fugitive')
+use {'p00f/clangd_extensions.nvim', config = function() 
+ local clangd_extensions =  require("clangd_extensions")
+ clangd_extensions.setup()
+ end
+}
 --use('navarasu/onedark.nvim')
 use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
 use ("nvim-lua/plenary.nvim")
@@ -38,7 +43,7 @@ use {'Civitasv/cmake-tools.nvim', config = function()
         cmake_command = "cmake", -- this is used to specify cmake command path
         cmake_regenerate_on_save = true, -- auto generate when save CMakeLists.txt
         cmake_generate_options = { "-DCMAKE_EXPORT_COMPILE_COMMANDS=1" }, -- this will be passed when invoke `CMakeGenerate`
-        cmake_build_options = {}, -- this will be passed when invoke `CMakeBuild`
+        cmake_build_options = { "-DCMAKE_TOOLCHAIN_FILE=/Users/jeremyevans/vcpkg/scripts/buildsystems/vcpkg.cmake" }, -- this will be passed when invoke `CMakeBuild`
         cmake_build_directory = "", -- this is used to specify generate directory for cmake
         cmake_build_directory_prefix = "cmake_build_", -- when cmake_build_directory is set to "", this option will be activated
         cmake_soft_link_compile_commands = true, -- this will automatically make a soft link from compile commands file to project root dir
