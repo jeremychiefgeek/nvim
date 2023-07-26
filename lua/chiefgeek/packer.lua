@@ -35,7 +35,8 @@ use {'p00f/clangd_extensions.nvim', config = function()
  end
 }
 --use('navarasu/onedark.nvim')
-use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
+use {'morhetz/gruvbox'}--, config = function() vim.cmd.colorscheme("gruvbox") end }
+use {"bartekprtc/gruv-vsassist.nvim"}
 use ("nvim-lua/plenary.nvim")
 use {'Civitasv/cmake-tools.nvim', config = function()
     local cmake_tools = require('cmake-tools')

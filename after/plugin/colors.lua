@@ -38,18 +38,34 @@
     },
 }]]--
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
+--vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[colorscheme gruv-vsassist]])
 require('lualine').setup {
   options = {
     theme = 'gruvbox'
     -- ... your lualine config
   }
 }
+require("gruv-vsassist").setup({
+    -- Enable transparent background
+    transparent = true,
+
+    -- Enable italic comment
+    italic_comments = true,
+
+    -- Disable nvim-tree background color
+    disable_nvimtree_bg = true,
+
+    -- Override colors (see ./lua/gruv-vsassist/colors.lua)
+    color_overrides = {
+        vscLineNumber = '#FFFFFF',
+    },
+})
 
 function ColorMyPencils(color)
 
 
-	color = color or "gruvbox"--"onedark"--"rose-pine"
+	color = color or "gruv-vsassist"--"gruvbox"--"onedark"--"rose-pine"
 	vim.cmd.colorscheme(color)
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" } )
