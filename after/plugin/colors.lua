@@ -39,14 +39,14 @@
 }]]--
 vim.o.background = "dark" -- or "light" for light mode
 --vim.cmd([[colorscheme gruvbox]])
-vim.cmd([[colorscheme gruv-vsassist]])
+vim.cmd([[colorscheme dracula]])
 require('lualine').setup {
   options = {
-    theme = 'gruvbox'
+    theme = 'dracula-nvim'
     -- ... your lualine config
   }
 }
-require("gruv-vsassist").setup({
+require("dracula").setup({
     -- Enable transparent background
     transparent = true,
 
@@ -65,7 +65,7 @@ require("gruv-vsassist").setup({
 function ColorMyPencils(color)
 
 
-	color = color or "gruv-vsassist"--"gruvbox"--"onedark"--"rose-pine"
+	color = color or "dracula"--"gruvbox" --"gruv-vsassist"--"gruvbox"--"onedark"--"rose-pine"
 	vim.cmd.colorscheme(color)
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" } )

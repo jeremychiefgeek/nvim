@@ -12,6 +12,7 @@ lsp.ensure_installed({
   'intelephense',
   'svelte',
   'rust_analyzer',
+  'ols',
   'zls'
 })
 
