@@ -20,14 +20,18 @@ return require('packer').startup(function(use)
 --            vim.cmd('colorscheme rose-pine')
 --        end
 --    })
+-- Dev Begin
+-- Dev End
 
--- plugin dev
+-- Trying these plugins Begin
+-- Trying these plugins End
 
 use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
 use('nvim-treesitter/playground')
 use('theprimeagen/harpoon')
 use('mbbill/undotree')
 use('tpope/vim-fugitive')
+use('folke/trouble.nvim')
 use {'p00f/clangd_extensions.nvim', config = function() 
  local clangd_extensions =  require("clangd_extensions")
  clangd_extensions.setup()
@@ -36,6 +40,11 @@ use {'p00f/clangd_extensions.nvim', config = function()
 --use('navarasu/onedark.nvim')
 use {'Mofiqul/dracula.nvim'}--, config = function() vim.cmd.colorscheme("gruvbox") end }
 use ("nvim-lua/plenary.nvim")
+use {'folke/todo-comments.nvim', config = function()
+ local todo_comments = require('todo-comments')
+ todo_comments.setup()
+ end
+}
 
 use {
     'VonHeikemen/lsp-zero.nvim',
