@@ -72,6 +72,17 @@ use {
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 }
 
+  use {
+    'MarcHamamji/runner.nvim',
+    requires = {
+      'nvim-telescope/telescope.nvim',
+      requires = { 'nvim-lua/plenary.nvim' }
+    },
+    config = function()
+        require('runner').setup()
+    end
+  }
+
 
 use { 'alexghergh/nvim-tmux-navigation', config = function()
 
