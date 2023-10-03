@@ -22,7 +22,6 @@ return require('packer').startup(function(use)
 --    })
 
 -- plugin dev
-use 'D:/plugins/cppbuild.nvim'
 
 use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
 use('nvim-treesitter/playground')

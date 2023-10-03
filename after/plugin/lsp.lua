@@ -13,7 +13,8 @@ lsp.ensure_installed({
   'svelte',
   'rust_analyzer',
   'ols',
-  'zls'
+  'zls',
+  'marksman'
 })
 
 -- Fix Undefined global 'vim'
