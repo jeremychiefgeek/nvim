@@ -38,7 +38,8 @@ use {'p00f/clangd_extensions.nvim', config = function()
  end
 }
 --use('navarasu/onedark.nvim')
-use {'Mofiqul/dracula.nvim'}--, config = function() vim.cmd.colorscheme("gruvbox") end }
+--use {'Mofiqul/dracula.nvim'}--, config = function() vim.cmd.colorscheme("gruvbox") end }
+use 'AlexvZyl/nordic.nvim'
 use ("nvim-lua/plenary.nvim")
 use {'folke/todo-comments.nvim', config = function()
  local todo_comments = require('todo-comments')
