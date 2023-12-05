@@ -68,6 +68,7 @@ use {
     {'hrsh7th/cmp-path'},         -- Optional
     {'saadparwaiz1/cmp_luasnip'}, -- Optional
     {'hrsh7th/cmp-nvim-lua'},     -- Optional
+    {'mhartington/formatter.nvim'},
 
     -- Snippets
     {'L3MON4D3/LuaSnip'},             -- Required
@@ -92,6 +93,7 @@ use {
         require('runner').setup()
     end
   }
+
 
 
 use { 'alexghergh/nvim-tmux-navigation', config = function()
