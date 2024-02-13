@@ -1,20 +1,19 @@
 vim.o.background = "dark" -- or "light" for light mode
 --vim.cmd([[colorscheme gruvbox]])
-vim.cmd([[colorscheme nord]])
-require('lualine').setup {
-  options = {
-    theme = 'nord'
-    -- ... your lualine config
-  }
-}
+vim.cmd([[colorscheme tokyonight]])
+require("lualine").setup({
+	options = {
+		theme = "tokyonight",
+		-- ... your lualine config
+	},
+})
 
 function ColorMyPencils(color)
-	color = color or "nord"--"gruvbox" --"gruv-vsassist"--"gruvbox"--"onedark"--"rose-pine"
+	color = color or "tokyonight" --"gruvbox" --"gruv-vsassist"--"gruvbox"--"onedark"--"rose-pine"
 	vim.cmd.colorscheme(color)
 
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" } )
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" } )
+	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 ColorMyPencils()
-
