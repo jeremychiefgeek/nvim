@@ -29,7 +29,7 @@ return require("packer").startup(function(use)
 	})
 
 	-- Theme
-	use("folke/tokyonight.nvim")
+	use("rose-pine/neovim")
 	-- Theme End
 
 	use("nvim-lua/plenary.nvim")
