@@ -123,7 +123,7 @@ return require("packer").startup(function(use)
 					["core.dirman"] = { -- Manages Neorg workspaces
 						config = {
 							workspaces = {
-								notes = "~/notes",
+								notes = "~/.notes",
 							},
 						},
 					},

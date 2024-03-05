@@ -16,4 +16,5 @@ autocmd("BufWritePost", {
             files = {"src/parser.c"}
         },
         filetype = "odin",
-    }]]--
+    }]]
+--
